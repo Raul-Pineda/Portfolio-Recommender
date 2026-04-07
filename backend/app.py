@@ -11,7 +11,7 @@ from fastapi.responses import JSONResponse, StreamingResponse
 
 from backend.pipeline import MODELS, ROOT, build_excel, run_pipeline, validate_csv
 
-DATA_DIR = ROOT / "src" / "data" / "processed"
+DATA_DIR = ROOT / "data" / "processed"
 
 app = FastAPI(title="Magic Formula ML")
 app.add_middleware(CORSMiddleware, allow_origins=["*"],
