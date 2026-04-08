@@ -13,6 +13,7 @@ scikit-learn==1.6.1
 xgboost==2.1.4
 
 # Explainability
+numba>=0.60
 shap==0.46.0
 
 # Statistics
