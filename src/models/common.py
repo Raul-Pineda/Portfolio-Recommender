@@ -5,10 +5,10 @@ MF_FEATURES = ["earnings_yield", "return_on_capital"]
 ALL_FEATURES = [
     "earnings_yield", "return_on_capital", "market_cap",
     "pb_ratio", "debt_to_equity", "net_margin", "revenue_growth",
-    "fcf_yield", "ev_to_ebitda", "ev_to_ebit", "roe", "gross_profit",
+    "fcf_yield", "ev_to_ebitda", "gross_profit",
     "total_assets", "return_1m", "return_3m", "return_6m", "return_1yr",
-    "beta", "volatility_60d", "short_interest_ratio", "volume",
-    "shares_outstanding", "total_return_index",
+    "volatility_60d", "short_interest_ratio", "volume",
+    "total_return_index",
 ]
 
 

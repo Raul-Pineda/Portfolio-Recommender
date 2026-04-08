@@ -37,10 +37,15 @@ def main():
     csv_path = RESULTS_DIR / "model_comparison.csv"
     comp_df.to_csv(csv_path, index=False)
 
+    # Per-quarter results (used by audit and analysis)
+    pq_path = RESULTS_DIR / "per_quarter.csv"
+    pq_df.to_csv(pq_path, index=False)
+
     print(f"\n{'='*60}\nRESULTS\n{'='*60}")
     print(comp_df.rename(columns=METRIC_LABELS).to_string(index=False))
     print(f"\nSaved: {xlsx_path}")
     print(f"Saved: {csv_path}")
+    print(f"Saved: {pq_path}")
 
 
 if __name__ == "__main__":
